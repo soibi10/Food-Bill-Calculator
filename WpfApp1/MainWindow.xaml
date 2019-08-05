@@ -1,0 +1,28 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="WpfApp1.MainWindow"
+        mc:Ignorable="d"
+        Title="Week 2 Assignment 2" Height="350" Width="525">
+    <Grid HorizontalAlignment="Left" Height="351" Margin="0,-25,-6.6,-5.2" VerticalAlignment="Top" Width="525">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="156*"/>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="224*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Food Charges" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Height="56" Width="136" FontSize="18"/>
+        <Label Content="Tip (15%)" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Height="56" Width="136" FontSize="18"/>
+        <Label Content="Sales Tax (7%)" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top" Height="56" Width="136" FontSize="18"/>
+        <Label Content="Bill Total" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Height="56" Width="136" FontSize="18"/>
+
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="56" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="18" x:Name="tb_foodcharges" Text="$ 00.00"  LostFocus="lost_focus"  Foreground="Gray" AutomationProperties.IsRequiredForForm="True"/>
+        <TextBox x:Name="tb_tip" Grid.Column="1" HorizontalAlignment="Left" Height="56" Margin="10,112,0,0" TextWrapping="Wrap" Text="$ 00.00" VerticalAlignment="Top" Width="125" FontSize="18" IsReadOnly="True"/>
+        <TextBox x:Name="tb_sales" Grid.Column="1" HorizontalAlignment="Left" Height="56" Margin="10,189,0,0" TextWrapping="Wrap" Text="$ 00.00" VerticalAlignment="Top" Width="125" FontSize="18" IsReadOnly="True" />
+        <TextBox x:Name="tb_billtotal" Grid.Column="1" HorizontalAlignment="Left" Height="56" Margin="10,269,0,0" TextWrapping="Wrap" Text="$ 00.00" VerticalAlignment="Top" Width="125" FontSize="18" IsReadOnly="True"/>
+        <Button Content="Calculate Bill" Grid.Column="2" HorizontalAlignment="Left" Margin="44.2,40,0,0" VerticalAlignment="Top" Width="134" Height="111" FontSize="18" Click="calculate_bill"/>
+        <Button Content="Clear" Grid.Column="2" HorizontalAlignment="Left" Margin="44.2,189,0,0" VerticalAlignment="Top" Width="134" Height="111" FontSize="18" Click="clear_content"/>
+    </Grid>
+</Window>
