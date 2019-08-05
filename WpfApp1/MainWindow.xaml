@@ -10,7 +10,7 @@
     <Grid HorizontalAlignment="Left" Height="351" Margin="0,-25,-6.6,-5.2" VerticalAlignment="Top" Width="525">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="156*"/>
-            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="146*"/>
             <ColumnDefinition Width="224*"/>
         </Grid.ColumnDefinitions>
         <Label Content="Food Charges" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Height="56" Width="136" FontSize="18"/>
